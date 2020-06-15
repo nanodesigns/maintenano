@@ -1,0 +1,44 @@
+# Maintenano - Simplest WordPress Maintenance Mode Plugin
+
+The simplest maintenance mode plugin for WordPress powered site. This is a developer-friendly plugin. Please see the 'Features' section to understand its purpose and the way it works.
+
+> WARNING:<br>
+> This is NOT A FANCY PLUGIN for the maintenance mode. If you are looking for such one, please do not use this; better use the other available plugins instead.
+
+## Features
+
+- Simple maintenace mode on Plugin Activation
+- No database clutter
+- No asset (CSS, JS, images etc.) loading
+- Plugin deactivation can disable the maintenance mode
+- Anybody other than the `administrator` can see the maintenance mode (Default)
+- 503 Status Header (Default)
+- No Cache Status Header (Default)
+- Warn in admin panel using Admin Notice
+- Translation-ready
+- Front end template can be intercepted from the plugin or by using the associated filter hook
+- Filter Hooks:
+  - `maintenano_allowed_capability` (default: 'manage_options')
+  - `maintenano_template`
+
+## FAQ
+
+### How to change the design?
+
+The default layout is from the plugin's `view.php` (available under `templates/` directory). To override the layout simply copy the file (`view.php`) and create a directory named `maintenano` in your theme directory, and paste the file (file structure would be like: `{your_theme}/maintenano/view.php`). Now change the view however you want.
+
+You can also intercept the template with `maintenano_template` filter hook.
+
+### How to change who can see the site?
+
+When the maintenance mode is active, by default, only the `administrator` (with the capability `manage_options`) can see the site. You can change the capability with the `maintenano_allowed_capability` filter hook.
+
+### How to translate the plugin?
+
+Locales can be placed under any of the following way:
+
+- `WP_LANG_DIR/maintenano/LOCALE.mo`
+- `WP_LANG_DIR/plugins/maintenano-LOCALE.mo`
+
+---
+<sup>**nano**designs 20200615</sup>
