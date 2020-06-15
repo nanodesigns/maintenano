@@ -94,9 +94,9 @@ class Maintenano {
 	 * Display an admin notice to warn the administrators.
 	 */
 	public function admin_notice() {
-		echo '<div class="notice notice-error">
-			<p><strong>ATTENTION:</strong> The site is under <strong>maintenance mode</strong>. Deactivate &lsquo;Maintenano&rsquo; plugin to make the site live again.</p>
-		</div>';
+		echo '<div class="notice notice-error" role="alert">';
+			echo '<p><strong>ATTENTION:</strong> The site is under <strong>maintenance mode</strong>. Deactivate &lsquo;Maintenano&rsquo; plugin to make the site live again.</p>';
+		echo '</div>';
 	}
 
 	/**
