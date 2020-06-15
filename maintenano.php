@@ -14,7 +14,7 @@
  * Version:           0.0.1
  * Author:            nanodesigns
  * Author URI:        https://nanodesignsbd.com/
- * Requires at least: 3.0.0
+ * Requires at least: 4.7.0
  * Tested up to:      5.4.2
  * License:           GPL-2.0+
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.txt
