@@ -24,9 +24,9 @@ The simplest maintenance mode plugin for WordPress powered site. This is a devel
   - `maintenano_allowed_capability` (default: 'manage_options')
   - `maintenano_template`
 
-## FAQ
+## FAQ (Frequently Asked Questions)
 
-### 01. How to change the design?
+### 01. How to change the design and/or texts?
 
 The default layout is from the plugin's `view.php` (available under `templates/` directory). To override the layout simply copy the file (`view.php`) and create a directory named `maintenano` in your theme directory, and paste the file (file structure would be like: `{your_theme}/maintenano/view.php`). Now change the view however you want.
 
@@ -42,10 +42,6 @@ Locales can be placed under any of the following way:
 
 - `WP_LANG_DIR/maintenano/LOCALE.mo`
 - `WP_LANG_DIR/plugins/maintenano-LOCALE.mo`
-
-### 04. How to change the footer text?
-
-Fork the plugin and make your own version. Or, you can follow the FAQ#01 and change the text 😊
 
 ---
 <sup>**nano**designs 20200615</sup>
